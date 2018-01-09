@@ -12,14 +12,14 @@
   <node pkg="rosbag"
         type="play"
         name="bag"
-        args="-r 1 --clock $(env HOME)/data/bags/V1_01_easy.bag"
+        args="-r 1 --clock $/home/vagrant/data/bags/V1_01_easy.bag"
         required="$(arg stop_at_bag_end)">
   </node>
 
   <node pkg="rosbag"
         type="record"
         name="bag_record"
-        args="-O $(env HOME)/data/out/rovio_traj.bag
+        args="-O $/home/vagrant/data/out/rovio_traj.bag
               /vicon/firefly_sbx/firefly_sbx
               /rovio/odometry"
         output="screen">
