@@ -43,12 +43,12 @@ def load_one_comparison(bag_file_name, odometry_topic_name):
 
 
 def make_bag_path(filename):
-    return os.path.join(os.path.expanduser('~'), 'vslam_comparison', filename)
+    return os.path.join(os.path.expanduser('~'), 'data/out', filename)
 
 
 comparisons = (
-    ('ORB SLAM', make_bag_path('orb_stereo_false_traj.bag'), '/orb/odometry'),
+    # ('ORB SLAM', make_bag_path('orb_stereo_false_traj.bag'), '/orb/odometry'),
     ('Rovio', make_bag_path('rovio_traj.bag'), '/rovio/odometry'),
-    ('ORB Odom', make_bag_path('orb_stereo_true_traj.bag'), '/orb/odometry'),
-    ('Viso2', make_bag_path('viso2_traj.bag'), '/stereo_odometer/odometry'),
+    # ('ORB Odom', make_bag_path('orb_stereo_true_traj.bag'), '/orb/odometry'),
+    # ('Viso2', make_bag_path('viso2_traj.bag'), '/stereo_odometer/odometry'),
 )
