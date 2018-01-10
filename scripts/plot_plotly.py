@@ -69,5 +69,5 @@ def running_times():
 
 
 if __name__ == "__main__":
-    # position_comparison()
-    running_times()
+    position_comparison()
+    #running_times()
