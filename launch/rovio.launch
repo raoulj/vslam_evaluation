@@ -12,7 +12,7 @@
   <node pkg="rosbag"
         type="play"
         name="bag"
-        args="-r $(env ROS_RATE) --clock $(env HOME)/data/bags/V1_01_easy.bag"
+        args="-r 0.1 --clock $(env HOME)/data/bags/V1_01_easy.bag"
         required="$(arg stop_at_bag_end)">
   </node>
 
